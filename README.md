@@ -4,13 +4,18 @@ Este restaurante lanzó un nuevo menú a principios de año y ha estado recopila
 ## Objetivo
 Identificar cuáles son los productos del menú que han tenido más éxito y cuales son los que menos han gustado a los clientes.
 Pasos a seguir:
+
   a)	Crear la base de datos con el archivo create_restaurant_db.sql
+
   b)	Explorar la tabla “menu_items” para conocer los productos del menú.
+  
       1.- Realizar consultas para contestar las siguientes preguntas:
-        ●	Encontrar el número de artículos en el menú.
+      
+	● Encontrar el número de artículos en el menú.
           SELECT COUNT(*)
           FROM MENU_ITEMS
-        ●	¿Cuál es el artículo menos caro y el más caro en el menú?
+        
+	● ¿Cuál es el artículo menos caro y el más caro en el menú?
           Menos caro Edamame	a $5.00
           SELECT item_name, price
 	        FROM menu_items 
