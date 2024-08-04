@@ -19,8 +19,8 @@ Pasos a seguir:
 	● ¿Cuál es el artículo menos caro y el más caro en el menú?
           Menos caro: Edamame	a $5.00
            SELECT item_name, price
-	        FROM menu_items 
-	        ORDER BY PRICE ASC LIMIT 1;
+	   FROM menu_items 
+	   ORDER BY PRICE ASC LIMIT 1;
           
           Más caro: Shrimp Scampi 19.95
            SELECT item_name, price
