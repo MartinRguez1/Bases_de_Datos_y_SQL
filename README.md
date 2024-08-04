@@ -29,9 +29,9 @@ Pasos a seguir:
 
 	● ¿Cuántos platos americanos hay en el menú?
  		R= 6
-   		SELECT count(*)
-     		FROM menu_items
-       		WHERE category = 'American' ;
+ 		SELECT count(*)
+ 		FROM menu_items
+		WHERE category = 'American' ;
         
 	● ¿Cuál es el precio promedio de los platos?
 	  	R= 13.285
