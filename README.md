@@ -28,15 +28,15 @@ Pasos a seguir:
 	        ORDER BY PRICE DESC LIMIT 1;
 
 	● ¿Cuántos platos americanos hay en el menú?
-	  R= 6
-   	  SELECT count(*)
-	  FROM menu_items 
-	  WHERE category = 'American' ;
+ 		R= 6
+   		SELECT count(*)
+     		FROM menu_items
+       		WHERE category = 'American' ;
         
         ● ¿Cuál es el precio promedio de los platos?
-	  R= 13.285
-   	  SELECT avg(price)
-	  FROM menu_items ;
+	  	R= 13.285
+   	  	SELECT avg(price)
+	  	FROM menu_items ;
   
 c) Explorar la tabla “order_details” para conocer los datos que han sido recolectados.
 
