@@ -47,7 +47,7 @@ b) Explorar la tabla “menu_items” para conocer los productos del menú.
 	FROM order_details 
 	order by order_date desc limit 1;
 	
---● ¿Cuántos pedidos se hicieron entre el '2023-01-01' y el '2023-01-05' R= 308?
+--● ¿Cuántos pedidos se hicieron entre el '2023-01-01' y el '2023-01-05'? R= 308
 	SELECT  count(distinct order_id)
 	FROM order_details 
 	where order_date between '2023-01-01' and '2023-01-05';
