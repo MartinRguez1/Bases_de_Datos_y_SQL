@@ -54,7 +54,6 @@ c) Explorar la tabla “order_details” para conocer los datos que han sido rec
 	  	order by 2 desc limit 5;
  
 	● ¿Cuándo se realizó el primer pedido y el último pedido?
-	
 	  	R= Primer pedido 2023-01-01
 	  	SELECT order_date 
 	  	FROM order_details 
@@ -66,7 +65,6 @@ c) Explorar la tabla “order_details” para conocer los datos que han sido rec
 	  	order by order_date desc limit 1;
    
    	● ¿Cuántos pedidos se hicieron entre el '2023-01-01' y el '2023-01-05'?
-	
 		R= 308
 		SELECT  count(distinct order_id)
   		FROM order_details 
