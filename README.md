@@ -13,19 +13,19 @@ Pasos a seguir:
 	Realizar consultas para contestar las siguientes preguntas:
       
 	● Encontrar el número de artículos en el menú.
-          SELECT COUNT(*)
-          FROM MENU_ITEMS
+ 		SELECT COUNT(*)
+   		FROM MENU_ITEMS
         
 	● ¿Cuál es el artículo menos caro y el más caro en el menú?
-          Menos caro: Edamame	a $5.00
-           SELECT item_name, price
-	   FROM menu_items 
-	   ORDER BY PRICE ASC LIMIT 1;
+ 		Menos caro: Edamame	a $5.00
+   		SELECT item_name, price
+     		FROM menu_items 
+       		ORDER BY PRICE ASC LIMIT 1;
           
-          Más caro: Shrimp Scampi 19.95
-           SELECT item_name, price
-	        FROM menu_items 
-	        ORDER BY PRICE DESC LIMIT 1;
+		Más caro: Shrimp Scampi 19.95
+  		SELECT item_name, price
+    		FROM menu_items 
+      		ORDER BY PRICE DESC LIMIT 1;
 
 	● ¿Cuántos platos americanos hay en el menú?
  		R= 6
