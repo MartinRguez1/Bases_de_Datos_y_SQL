@@ -41,19 +41,19 @@ Pasos a seguir:
 c) Explorar la tabla “order_details” para conocer los datos que han sido recolectados.
 
 	Realizar consultas para contestar las siguientes preguntas:
-        ● ¿Cuántos pedidos únicos se realizaron en total?
+	● ¿Cuántos pedidos únicos se realizaron en total?
 	  R=5.370
 	  SELECT count(*), count(distinct order_id)
 	  FROM order_details;
    
-        ● ¿Cuáles son los 5 pedidos que tuvieron el mayor número de artículos?
-	
+	● ¿Cuáles son los 5 pedidos que tuvieron el mayor número de artículos?
+	 R= 440, 2675, 3473, 4305, 443
 	  SELECT order_id, count(*)
 	  FROM order_details
 	  group by order_id
 	  order by 2 desc limit 5;
  
-        ● ¿Cuándo se realizó el primer pedido y el último pedido?
+	● ¿Cuándo se realizó el primer pedido y el último pedido?
 	
 	  Primer pedido 2023-01-01
 	  SELECT order_date 
@@ -66,6 +66,11 @@ c) Explorar la tabla “order_details” para conocer los datos que han sido rec
 	  order by order_date desc limit 1;
    
         ● ¿Cuántos pedidos se hicieron entre el '2023-01-01' y el '2023-01-05'?
+	
+	  R= 308
+	  SELECT  count(distinct order_id)
+	  FROM order_details 
+	  where order_date between '2023-01-01' and '2023-01-05';
   
 d) Usar ambas tablas para conocer la reacción de los clientes respecto al menú.
 
